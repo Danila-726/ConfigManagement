@@ -13,7 +13,7 @@ def start_app():
     print(f"  Start script: {args.start_script if args.start_script else 'Not specified'}")
     print("-" * 40)
     
-    emulator = repl.shell_emulate(args.vfs_path, args.start_script)
+    emulator = repl.shell_emulate(args.vfs_path, str(args.start_script))
 
     
     if args.start_script:
