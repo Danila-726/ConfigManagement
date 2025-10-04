@@ -3,7 +3,7 @@ import repl
 
 def start_app():
     parser = argparse.ArgumentParser(description='UNIX-like shell emulator')
-    parser.add_argument('--vfs-path', default='.', help='Path to VFS physical location')
+    parser.add_argument('--vfs-path', required=True, help='Path to VFS JSON file')
     parser.add_argument('--start-script', help='Path to startup script')
     
     args = parser.parse_args()
